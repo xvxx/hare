@@ -1,6 +1,6 @@
-<img src="./img/hare1.gif" width="300" align="right" />
-
 # The March Hare
+
+<img src="./img/hare1.gif" width="300" align="right" />
 
 Hare is a simple HTTP server that turns [Hatter] templates into
 HTML on-the-fly. It can be used for prototyping or developing static
