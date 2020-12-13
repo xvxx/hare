@@ -13,7 +13,14 @@ routes! {
         }
     };
 
-    GET "/" => |_| "index";
+    GET "/" => |_| -> vial::Result<Response> {
+        if asset::exists("index.hat") {
+            let mut env = Hatter::new();
+            Ok(env.render(&asset::to_string("index.hat")?).to_response())
+        } else {
+            Ok(Response::from(404))
+        }
+    };
 }
 
 fn main() {

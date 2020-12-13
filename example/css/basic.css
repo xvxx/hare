@@ -1,0 +1,13 @@
+body {
+    background-color: lightgray;
+    margin: 20px;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+}
+
+#main {
+    width: 500px;
+    margin: 0 auto;
+}

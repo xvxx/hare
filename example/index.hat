@@ -1,0 +1,9 @@
+<head>
+    <link href="/css/basic.css" rel="stylesheet">
+    <title> My Hatter Site
+
+<body>
+    <#main>
+        <h1> "Welcome!"
+        <img src="/img/hare2.gif" width="200" align="right" />
+        <p> This is my website.
