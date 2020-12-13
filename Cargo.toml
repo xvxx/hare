@@ -1,0 +1,15 @@
+[package]
+name = "hare"
+version = "0.1.0"
+authors = ["chris west <c@xvxx.io>"]
+edition = "2018"
+license = "MIT"
+description = "Hatter template development server."
+repository = "https://github.com/xvxx/hare"
+readme = "README.md"
+categories = ["network-programming", "web-programming::http-server"]
+keywords = ["http", "vial", "hatter", "web", "template"]
+
+[dependencies]
+vial = "0.1.9"
+hatter = "0.1"
