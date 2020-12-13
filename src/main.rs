@@ -29,6 +29,17 @@ fn main() {
     if let Some(dir) = args.next() {
         path = dir;
     }
+
+    if matches!(path.as_ref(), "--version" | "version" | "-version" | "-v") {
+        println!("hare v{}", env!("CARGO_PKG_VERSION"));
+        return;
+    }
+
+    if matches!(path.as_ref(), "--help" | "help" | "-help" | "-h") {
+        println!("usage: hare [DIRECTORY]");
+        return;
+    }
+
     let addr = "0.0.0.0:8185";
     let banner = format!("\x1b[1m🎩 Serving {} at http://{} \x1b[0m", path, addr);
     vial::asset_dir!(path);
