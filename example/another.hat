@@ -1,0 +1,10 @@
+<head>
+    <link href="/css/basic.css" rel="stylesheet">
+    <title> Another Page in my Hatter Site
+
+<body>
+    <#main>
+        <h1> "Page Two!"
+        <p> This is page two in my website.
+        <p> <a href="/"> Back home
+
